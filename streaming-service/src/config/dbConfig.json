@@ -1,0 +1,11 @@
+{
+    "devlopment": {
+        "host": "35.225.70.0",
+        "user": "root",
+        "username": "root",
+        "password": "MessIce01",
+        "database": "MessICE",
+        "userName" : "root",
+        "dialect" : "mysql"
+    }
+}

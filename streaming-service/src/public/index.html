@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitch Stream Viewer</title>
+</head>
+<body>
+    <h1>Watch the Stream</h1>
+    <div id="twitch-stream-container">
+        <!-- Twitch embed will be injected here -->
+    </div>
+
+    <script>
+        const broadcasterUsername = "aaditya321321"; 
+        const iframe = document.createElement("iframe");
+        iframe.src = `https://player.twitch.tv/?channel=${broadcasterUsername}&parent=fancy-valued-goat.ngrok-free.app&parent=localhost`;
+        iframe.height = 480;
+        iframe.width = 800;
+        iframe.frameborder = 0;
+        iframe.scrolling = "no";
+        iframe.allowfullscreen = true;
+        document.getElementById("twitch-stream-container").appendChild(iframe);
+    </script>
+</body>
+</html>
