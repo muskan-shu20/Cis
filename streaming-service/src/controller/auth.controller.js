@@ -136,7 +136,7 @@ async function triggerLiveUserEvent() {
         for (let i in liveUsers) {  
             console.log('liveUsers: ', liveUsers);
             const streamInfo = await getStreamInfo(liveUsers[i].twitchId )
-            const twitchUrl = `https://player.twitch.tv/?channel=${liveUsers[i].twitchUsername}&parent=fancy-valued-goat.ngrok-free.app&parent=todocalc-8633c.web.app&parent=localhost`;
+            const twitchUrl = `https://player.twitch.tv/?channel=${liveUsers[i].twitchUsername}&parent=fancy-valued-goat.ngrok-free.app&parent=todocalc-8633c.web.app&parent=localhost&parent=https://cis-0cz9.onrender.com`;
             const data = {
                 twitchUrl,
                 streamingId : streamInfo?.id,

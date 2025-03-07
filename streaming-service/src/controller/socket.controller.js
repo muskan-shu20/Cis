@@ -8,7 +8,7 @@ async function getLiveUsers(socket, io) {
             const liveUrls = []
             if (liveUsers.length) {
                 for (let i in liveUsers) {
-                    const twitchUrl = `https://player.twitch.tv/?channel=${liveUsers[i].twitchUsername}&parent=fancy-valued-goat.ngrok-free.app`
+                    const twitchUrl = `https://player.twitch.tv/?channel=${liveUsers[i].twitchUsername}&parent=fancy-valued-goat.ngrok-free.app&parent=https://cis-0cz9.onrender.com/`
                     liveUrls.push(twitchUrl)
                     console.log('liveUrls: ', liveUrls);
                 }
